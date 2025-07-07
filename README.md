@@ -103,6 +103,22 @@ Ultra96 V2: Vitis-AI를 활용한 xmodel 생성 시도
 
 ### 0707
 
+#### 최현우
+
+- Daily Report 및 Git README 중간 정리
+-  PYNQ OS ResNET50 .xmodel 생성
+    - MLPerf 최적화 ResNET50 모델에 대한 xmodel 파일 생성
+    - MLPerf: 머신러닝 성능 측정을 위한 벤치마크 → 최적화가 가장 잘된 모델
+    - DPU의 퍼포먼스를 확인하기에 가장 최적의 모델이라 판단
+- ResNET50에 대한 Class 분류 코드 작성
+    - pynq-dpu를 사용하는 스크립트
+    - PS만을 사용하는 스크립트
+       - PS에 대한 스크립트는 모델 파일 필요
+       - TF 혹은 PT에서 사전학습된 파일 사용 예정
+       - Pynq에서 구동 불가 시 코랩을 통한 직접 모델 파일 생성할 것
+- FPGA와 라즈베리파이 간 성능 비교를 위한 Test Sample 데이터 준비
+
+
 ### 0708
 
 ### 0709
