@@ -1,12 +1,12 @@
-# TEAM: 조은지안조은지
+# 🌟TEAM: 조은지안조은지
 
-## 팀원
+## 🙋‍♂️팀원
 - 조장: 정은지
 - 팀원1: 장환
 - 팀원2: 이은성
 - 팀원3: 최현우
 
-## Role
+## 🖊️Role
 - 정은지
   - Team leader
 - 이은성
@@ -23,7 +23,7 @@
   - FPGA Vs 라즈베리파이 성능 비교
 
 
-## 개발 일정
+## 🗓️개발 일정
 
 ### <개발일정 기재 - Gantt Chart>
 
@@ -104,7 +104,7 @@ Ultra96 V2: Vitis-AI를 활용한 xmodel 생성 시도
 
 ### 0710
 
-## Trouble Shooting
+## 🚀Trouble Shooting
 
 ### 이은성
 
