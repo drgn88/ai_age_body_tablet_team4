@@ -13,6 +13,9 @@
   - Application developer(Raspberry pi)
 - 장환
   - Validation
+  - 나이 구간 정확도 검증
+  - 성별 분류 정확도 검증
+  - 웹캠 처리 속도 검증
 - 최현우
   - FPGA & On-device developer
   - 나이 및 성별 추론 모델 학습
