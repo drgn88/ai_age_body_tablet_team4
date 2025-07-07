@@ -47,24 +47,26 @@
 #### 최현우
 
 - 나이 학습 모델 개발및 추론 검증 병행
-    - EffiecientNet B7모델 학습
-    - EffiecientNet B7(Teacher) → B3(Student) 전이학습(경량화)
+    - EfficientNet B7모델 학습
+    - EfficientNet B7(Teacher) → B3(Student) 전이학습(경량화)
     - Gil Levi & Tal Hassner Model 레퍼런스 모델 참조
        - 라즈베리 파이 임베딩 후 성능 확인
-       - 기존 학습 모델은 하나의 나이대만 추론
+       - 기존 학습 모델은 특정 나이대만 추론됨
        - 레퍼런스 모델 사용시 다양한 나이대 추론 성공
     - 추론 모델 경량화 연구
-       - Caffe → tflite 파일로 convert 수행
+       - Caffe → onnx → tensorflow 파일로 convert 수행
 - FPGA이용 가속화 방법 연구
     - DPU IP를 사용하여 petalinux 이미지 bake 방안 모색
     - Vitis-AI 플랫폼
        - 학습 결과 파일 → .xmodel로 변환
-       - 학습 결과에 적합한 DPU 가속기 생성지원
+       - DPU에 모델을 최적화하기 위해 양자화 및 컴파일
+       - DPU IP에 최적화된 파일 생성
     - PYNQ OS
        - pynq-dpu를 이용하여 PYNQ OS에 내장된 DPU IP 사용가능
        - PYNQ-OS의 pynq-dpu와 VART를 사용하여 DPU를 이용한 추론
 
 → Vitis-AI 플랫폼을 이용한 .xmodel 우선 시도
+
 
 ### 0705-0706
 
