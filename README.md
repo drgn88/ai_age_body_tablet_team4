@@ -6,6 +6,22 @@
 - 팀원2: 이은성
 - 팀원3: 최현우
 
+## Role
+- 정은지
+  - Team leader
+- 이은성
+  - Application developer(Raspberry pi)
+- 장환
+  - Validation
+- 최현우
+  - FPGA & On-device developer
+  - 나이 및 성별 추론 모델 학습
+    - 라즈베리파이 임베딩 및 성능 개선
+  - Ultra96V2에 추론 모델 포팅
+  - PYNQ OS importing
+  - PS - PL에 따른 성능 비교
+  - FPGA Vs 라즈베리파이 성능 비교
+
 ## 개발 일정
 
 ### 0705
