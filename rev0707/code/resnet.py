@@ -1,3 +1,4 @@
+# 동물 사진 분류 (사용 데이터셋 : img)
 import cv2
 import time
 import numpy as np
@@ -17,7 +18,7 @@ try:
     # ImageNet 가중치와 함께 ResNet50 모델을 로드합니다.
     # include_top=True는 분류를 위한 마지막 Dense 레이어를 포함함을 의미합니다.
     model = ResNet50(weights='imagenet')
-    print("ResNet50 모델이 성공적으로 로드되었습니다.")
+    print("ResNet50 모델이 성공적으로 로드되었습니다.류")
 except Exception as e:
     print(f"오류: ResNet50 모델 로드 실패: {e}")
     print("인터넷 연결을 확인하여 ImageNet 가중치를 다운로드할 수 있는지 확인해주세요.")
