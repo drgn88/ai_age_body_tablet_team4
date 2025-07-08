@@ -121,6 +121,17 @@ Ultra96 V2: Vitis-AI를 활용한 xmodel 생성 시도
 
 ### 0708
 
+#### 최현우
+
+- ResNet50 DPU 사용했을 때 성능 비교
+   - PYNQ-DPU ResNet50 .xmodel생성
+   - DPU 사용 시 및 PS만 사용할 때 성능 측정
+   - 우분투 PC 및 라즈베리 파이에서 성능 측정
+[비교 결과]
+ResNet50: https://github.com/drgn88/ai_age_body_tablet_team4/issues/2
+YoloV3: https://github.com/drgn88/ai_age_body_tablet_team4/issues/3
+
+
 ### 0709
 
 ### 0710
