@@ -32,8 +32,8 @@
   - S/W 개발
   - AI 모델 통합 (+알고리즘 개선)
   - 라즈베리파이 임베딩
-    - Application developer(Raspberry pi)
-
+    - Application developer(Raspberry PI)
+  
 - 장환
   - Validation
   - 나이 구간 정확도 검증
@@ -46,7 +46,7 @@
   - Ultra96V2에 추론 모델 포팅
   - PYNQ OS importing
   - PS - PL에 따른 성능 비교
-  - FPGA Vs 라즈베리파이 성능 비교
+  - FPGA vs Raspberry PI 성능 비교
 
 
 ## 🗓️개발 일정
