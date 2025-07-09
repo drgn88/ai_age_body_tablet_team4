@@ -34,6 +34,7 @@
   - AI 모델 통합 (+알고리즘 개선)
   - 라즈베리파이 임베딩
     - Application developer(Raspberry PI)
+    - 학습 모델 별 성능 검증
   
 - 장환
   - Validation
