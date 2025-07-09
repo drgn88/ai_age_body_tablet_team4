@@ -4,6 +4,39 @@
 <img src="./img/thumbnail/Nutri_view.png"><br>
 </p>
 
+## 🙋‍♂️팀원
+
+|                                                                                                                **정은지**                                                                                                                |                                                                                                                **장환**                                                                                                                 |                                                         **이은성**                                                          |                                                                    **최현우**                                                                     |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                                                               Team Leader                                                                                                                |                                                                                                               Validation                                                                                                                |                                                    Application Developer                                                    |                                                                On-Device Developer                                                                |
+| [<img src="https://i.namu.wiki/i/Y650moMUwUSmEltUeTIHISqe6E55ZAlTGHyBIO2lbSUO4HxxF7EB5dBTH-gFipuSgVUqJMriWR9TykMRndEE8cbSPqQ0akgqX4MyaBtoJhJ9I6yh1hvgi8qF-fTb1vHBMbXA2rfl93GD9RrqHFiPig.webp" width=150 height=150> </br> @Eunji Jung]() | [<img src="https://i.namu.wiki/i/rmibVEm7XPBY65d0Ok8BEREoiQZWXvTKYpAoaQIrhDaqq28veHH8Q7izbBrl9ZYYBqghbP691rAOChdU5gCP34iyt91bkMH6RPf_mIcyj155nsDlLs8wQH1ubXstRXPj3nBk8yZIeomIJBFBUMD5lQ.webp" width=150 height=150> </br> @Jang Hwan]() | [<img src="https://i1.sndcdn.com/artworks-Z5SLEGyINrvdjrkz-CQbgFA-t500x500.jpg" width=150 height=150> </br> @EunSung Lee]() | [<img src="https://cdn.gamemeca.com/data_center/268/770/20230719114747.jpg" width=150 height=150> </br> @HyenWoo Choi](https://github.com/drgn88) |
+
+## 🖊️Role
+
+### 🦖정은지
+- Team leader
+
+### 이은성
+- S/W 개발
+- AI 모델 통합 (+알고리즘 개선)
+- 라즈베리파이 임베딩
+  - Application developer(Raspberry pi)
+
+### 🥊장환
+- Validation
+- 나이 구간 정확도 검증
+- 성별 분류 정확도 검증
+- 웹캠 처리 속도 검증
+
+### 🐲최현우
+- FPGA & On-device developer
+- 나이 및 성별 추론 모델 학습
+  - 라즈베리파이 임베딩 및 성능 개선
+- Ultra96V2에 추론 모델 포팅
+- PYNQ OS importing
+- PS - PL에 따른 성능 비교
+- FPGA Vs 라즈베리파이 성능 비교
+
 ## 🚀프로젝트 개요
 **Ai Nutri View**는 웹캠으로 얼굴을 인식해 나이와 성별을 추론하고, 개인에 맞는 영양제를 AI가 추천하는 스마트 헬스케어 시스템입니다.
 이 프로젝트는 딥러닝 기반 얼굴 분석 모델과 LLM(Ollama:1b)을 활용하여, 사용자의 정보를 바탕으로 하루 권장량과 추천 이유까지 제공하는 개인 맞춤형 영양제 가이드를 목표로 합니다. <br>
@@ -19,34 +52,7 @@
 
 ![alt text](img/thumbnail/news0.png)
 
-## 🙋‍♂️팀원
-- 조장: 정은지
-- 팀원1: 장환
-- 팀원2: 이은성
-- 팀원3: 최현우
 
-## 🖊️Role
-- 정은지
-  - Team leader
-- 이은성
-  - S/W 개발
-  - AI 모델 통합 (+알고리즘 개선)
-  - 라즈베리파이 임베딩
-    - Application developer(Raspberry pi)
-
-- 장환
-  - Validation
-  - 나이 구간 정확도 검증
-  - 성별 분류 정확도 검증
-  - 웹캠 처리 속도 검증
-- 최현우
-  - FPGA & On-device developer
-  - 나이 및 성별 추론 모델 학습
-    - 라즈베리파이 임베딩 및 성능 개선
-  - Ultra96V2에 추론 모델 포팅
-  - PYNQ OS importing
-  - PS - PL에 따른 성능 비교
-  - FPGA Vs 라즈베리파이 성능 비교
 
 
 ## 🗓️개발 일정
