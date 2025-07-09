@@ -50,34 +50,9 @@
 현대인은 바쁜 일상 속에서 자신에게 맞는 영양제를 찾기 어렵고, 정보는 넘쳐나지만 정확한 추천은 부족한 실정입니다. 특히 성별, 연령, 건강 상태 등에 따라 필요한 영양소가 다르지만 이를 고려하지 않은 제품 선택은 오히려 건강을 해칠 수 있습니다.
 이에 따라 **Ai Nutri View**는 웹캠으로 실시간 얼굴을 인식하여 추론된 나이와 성별 정보를 기반으로, 사용자에게 꼭 필요한 영양제 3가지를 하루 섭취량과 함께 추천함으로써 보다 정확하고 안전한 건강 관리 서비스를 제공하고자 개발되었습니다.
 
-![alt text](img/thumbnail/news0.png)
-
-
-## 🖊️Role
-- 정은지
-  - Team leader
-- 이은성
-  - 나이 및 성별 추론 모델 학습, 데이터셋 구축
-  - S/W 개발
-  - AI 모델 통합 (+알고리즘 개선)
-  - 라즈베리파이 임베딩
-    - Application developer(Raspberry PI)
-    - 학습 모델 별 성능 검증
-  
-- 장환
-  - Validation
-  - 나이 구간 정확도 검증
-  - 성별 분류 정확도 검증
-  - 웹캠 처리 속도 검증
-- 최현우
-  - FPGA & On-device developer
-  - 나이 및 성별 추론 모델 학습
-    - 라즈베리파이 임베딩 및 성능 개선
-  - Ultra96V2에 추론 모델 포팅
-  - PYNQ OS importing
-  - PS - PL에 따른 성능 비교
-  - FPGA vs Raspberry PI 성능 비교
-
+<p align="center">
+<img src="img/thumbnail/news0.png"><br>
+</p>
 
 ## 🗓️개발 일정 [개발 일정 보기](Dev_Sche.md)
 
