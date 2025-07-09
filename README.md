@@ -25,7 +25,11 @@
 - 정은지
   - Team leader
 - 이은성
-  - Application developer(Raspberry pi)
+  - S/W 개발
+  - AI 모델 통합 (+알고리즘 개선)
+  - 라즈베리파이 임베딩
+    - Application developer(Raspberry pi)
+
 - 장환
   - Validation
   - 나이 구간 정확도 검증
