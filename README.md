@@ -79,7 +79,7 @@
   - FPGA vs Raspberry PI 성능 비교
 
 
-## 🗓️개발 일정 [개발 일정 보기](Dev_Sche.md)
+## 🗓️개발 일정 [[상세 일정]](Dev_Sche.md)
 
 ### <개발일정 기재 - Gantt Chart>
 
