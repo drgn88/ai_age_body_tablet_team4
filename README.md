@@ -99,8 +99,12 @@
 |![alt text](img/course/feat2.png)|
 
 **[ 나이, 성별 추론 ]**
+
 - 웹캠에 인식되는 사람의 얼굴을 추적하고 나이와 성별을 학습된 모델을 가지고 추론하여 웹캠에 나타냅니다.
-![alt text](img/course/feat1.png)
+
+| 나이 및 성별 추론 |
+| :---: |
+|![alt text](img/course/feat1.png)|
 
 **[ Ollama 요청 ]**
 - 나이와 성별 데이터를 python 스크립트 내부의 자동완성 prompt를 통해 올라마에 질문합니다.
