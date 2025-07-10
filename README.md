@@ -252,8 +252,6 @@ pynq get-notebooks pynq-dpu -p .
 
 
 
-### PYNQ
-
 ## 🚀Trouble Shooting 
 [⚒️[Trained AI Model 1]](/trouble_shooting/Trouble_Shooting.md)   <br>
 [⚒️[Trained AI Model 2]](/trouble_shooting/Trouble_Shooting1.md)  <br>
