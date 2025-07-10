@@ -90,6 +90,7 @@
 **[ 웹캠 실행 ]**
 - CLI에 웹캠실행 명령을 입력하면 웹캠이 실행 됩니다.
 - 완료되면 다음과 같은 안내 메시지가 나타납니다.
+
 ![alt text](img/course/feat2.png)
 
 **[ 나이, 성별 추론 ]**
@@ -114,10 +115,12 @@
 - 웹캠 종료 조건은 다음과 같습니다.
   - 웹캠 창에서 "q" 입력
   - CLI에 "웹캠 종료"
+
 ![alt text](img/course/feat7.png)
 
 - 시스템 종료 조건은 다음과 같습니다.
   - CLI에 "웹캠 종료" 입력
+  
 ![alt text](img/course/feat8.png)
 
 ## Ultra96-V2 DPU 구현 과정
