@@ -5,4 +5,4 @@
 
 | 문제 |
 | :---: |
-|![alt text](../video/problem.gif)|
+|![alt text](../video/problem1.gif)|
