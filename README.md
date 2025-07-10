@@ -79,14 +79,14 @@
 
 ## SW Architecture
 ```
-+---System/
-| |---Controller.py
-| |---Cam.py
-
-+---Model/
-| |---Img_DataSet
-| |---Age_vgg16.keras
-| |---Gen_ResNet151.keras
+|--- System/
+| |--- Controller.py
+| |--- Cam.py
+|
+|--- Model/
+| |--- Img_DataSet
+| |--- Age_vgg16.keras
+| |--- Gen_ResNet151.keras
 
 ```
 
