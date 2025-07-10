@@ -136,21 +136,6 @@
 
 - Ollama가 답변을 준비하는 동안 스페이스바를 추가 입력하게 되면 다음과 같은 문구가 나타납니다.
 
-|             예외 처리             |
-| :-------------------------------: |
-| ![alt text](img/course/feat6.png) |
-| Ollama 요청 |
-| :---: |
-|![alt text](img/course/feat3.png)|
-
-- Ollama가 답변을 준비하는 동안 웹캠은 닫힌 상태가 됩니다.
-
-| 웹캠 닫힘 |
-| :---: |
-|![alt text](img/course/feat5.png)|
-
-- Ollama가 답변을 준비하는 동안 스페이스바를 추가 입력하게 되면 다음과 같은 문구가 나타납니다.
-
 | 예외 처리 |
 | :---: |
 |![alt text](img/course/feat6.png)|
