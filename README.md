@@ -104,9 +104,6 @@
 |               실행                |
 | :-------------------------------: |
 | ![alt text](img/course/feat0.png) |
-| 실행 |
-| :---: |
-|![alt text](img/course/feat0.png)|
 
 **[ 웹캠 실행 ]**
 - CLI에 웹캠실행 명령을 입력하면 웹캠이 실행 됩니다.
@@ -115,9 +112,6 @@
 |             웹캠 실행             |
 | :-------------------------------: |
 | ![alt text](img/course/feat2.png) |
-| 웹캠 실행 |
-| :---: |
-|![alt text](img/course/feat2.png)|
 
 **[ 나이, 성별 추론 ]**
 
@@ -126,9 +120,6 @@
 |         나이 및 성별 추론         |
 | :-------------------------------: |
 | ![alt text](img/course/feat1.png) |
-| 나이 및 성별 추론 |
-| :---: |
-|![alt text](img/course/feat1.png)|
 
 **[ Ollama 요청 ]**
 - 나이와 성별 데이터를 python 스크립트 내부의 자동완성 prompt를 통해 올라마에 질문합니다.
@@ -170,9 +161,6 @@
 |             답변 완료             |
 | :-------------------------------: |
 | ![alt text](img/course/feat4.png) |
-| 답변 완료 |
-| :---: |
-|![alt text](img/course/feat4.png)|
 
 **[ 종료 조건 ]**
 - 웹캠 종료 조건은 다음과 같습니다.
@@ -182,9 +170,6 @@
 |             웹캠 종료             |
 | :-------------------------------: |
 | ![alt text](img/course/feat7.png) |
-| 웹캠 종료 |
-| :---: |
-|![alt text](img/course/feat7.png)|
 
 - 프로세서 종료 조건은 다음과 같습니다.
   - CLI에 "웹캠 종료" 입력
@@ -193,10 +178,6 @@
 | :-------------------------------: |
 | ![alt text](img/course/feat8.png) |
 
-# Ultra96-V2 DPU 구현 과정
-| 프로세서 종료 |
-| :---: |
-|![alt text](img/course/feat8.png)|
 
 ## Ultra96-V2 DPU 구현 과정
 
