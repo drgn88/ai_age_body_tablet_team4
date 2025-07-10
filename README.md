@@ -114,26 +114,39 @@
 |![alt text](img/course/feat3.png)|
 
 - Ollama가 답변을 준비하는 동안 웹캠은 닫힌 상태가 됩니다.
-![alt text](img/course/feat5.png)
+
+| 웹캠 닫힘 |
+| :---: |
+|![alt text](img/course/feat5.png)|
 
 - Ollama가 답변을 준비하는 동안 스페이스바를 추가 입력하게 되면 다음과 같은 문구가 나타납니다.
-![alt text](img/course/feat6.png)
+
+| 예외 처리 |
+| :---: |
+|![alt text](img/course/feat6.png)|
 
 **[ Ollama 답변 완료 ]**
 - Ollama가 답변 완료 상태가 되면 웹캠은 재개 되고 CLI에 영양제에 대한 정보를 제공합니다.
-![alt text](img/course/feat4.png)
+
+| 답변 완료 |
+| :---: |
+|![alt text](img/course/feat4.png)|
 
 **[ 종료 조건 ]**
 - 웹캠 종료 조건은 다음과 같습니다.
   - 웹캠 창에서 "q" 입력
   - CLI에 "웹캠 종료"
 
-![alt text](img/course/feat7.png)
+| 웹캠 종료 |
+| :---: |
+|![alt text](img/course/feat7.png)|
 
-- 시스템 종료 조건은 다음과 같습니다.
+- 프로세서 종료 조건은 다음과 같습니다.
   - CLI에 "웹캠 종료" 입력
 
-![alt text](img/course/feat8.png)
+| 프로세서 종료 |
+| :---: |
+|![alt text](img/course/feat8.png)|
 
 ## Ultra96-V2 DPU 구현 과정
 
