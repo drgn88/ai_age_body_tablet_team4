@@ -81,7 +81,7 @@
 > 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](https://github.com/drgn88/ai_age_body_tablet_team4/blob/main/presentation/TEAM4.pdf)
 
 
-## 추론 어플리케이션 과정
+## 모델 실행 과정
 
 ## Ultra96-V2 DPU 구현 과정
 
