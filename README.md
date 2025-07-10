@@ -108,7 +108,10 @@
 
 **[ Ollama 요청 ]**
 - 나이와 성별 데이터를 python 스크립트 내부의 자동완성 prompt를 통해 올라마에 질문합니다.
-![alt text](img/course/feat3.png)
+
+| Ollama 요청 |
+| :---: |
+|![alt text](img/course/feat3.png)|
 
 - Ollama가 답변을 준비하는 동안 웹캠은 닫힌 상태가 됩니다.
 ![alt text](img/course/feat5.png)
