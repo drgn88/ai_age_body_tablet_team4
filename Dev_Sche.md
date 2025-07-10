@@ -1,6 +1,6 @@
  🙋‍♀️🙋‍♂️🙋👨‍💼
 
-### 🗓️0703~0704
+## 🗓️0703~0704
 
 #### 최현우
 
@@ -26,7 +26,7 @@
 → Vitis-AI 플랫폼을 이용한 .xmodel 우선 시도
 
 
-### 🗓️0705-0706
+## 🗓️0705-0706
 
 #### 최현우
 
@@ -59,7 +59,7 @@ Ultra96 V2: Vitis-AI를 활용한 xmodel 생성 시도
   - 이미지로 성능 비교하기로 방향 전환
 - PS(ap)로만 사용했을 때와 PL(DPU)을 같이 사용했을 때 이미지 객체 분류에서 성능 비교 성공
 
-### 🗓️0707
+## 🗓️0707
 
 #### 최현우
 
@@ -77,7 +77,7 @@ Ultra96 V2: Vitis-AI를 활용한 xmodel 생성 시도
 - FPGA와 라즈베리파이 간 성능 비교를 위한 Test Sample 데이터 준비
 
 
-### 🗓️0708
+## 🗓️0708
 
 #### 최현우
 
@@ -90,6 +90,6 @@ ResNet50: https://github.com/drgn88/ai_age_body_tablet_team4/issues/2
 YoloV3: https://github.com/drgn88/ai_age_body_tablet_team4/issues/3
 
 
-### 🗓️0709
+## 🗓️0709
 
-### 🗓️0710
+## 🗓️0710
