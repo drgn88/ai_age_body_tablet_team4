@@ -93,7 +93,7 @@
 
 
 
-## 🚀Trouble Shooting
+## 🚀Trouble Shooting [[상세]](Trouble_Shooting.md)
 
 ### 이은성
 
