@@ -94,83 +94,82 @@
 |   |--- Img_DataSet/
 |   |--- Age_vgg16.keras
 |   └── Gen_ResNet151.keras
+
 ```
 
 
 **[ 실행 ]**
 - controller.py 실행하면 Command Line Interface에 올라마 실행됩니다.
 
-| 실행 |
-| :---: |
-|![alt text](img/course/feat0.png)|
+|               실행                |
+| :-------------------------------: |
+| ![alt text](img/course/feat0.png) |
 
 **[ 웹캠 실행 ]**
 - CLI에 웹캠실행 명령을 입력하면 웹캠이 실행 됩니다.
 - 완료되면 다음과 같은 안내 메시지가 나타납니다.
 
-| 웹캠 실행 |
-| :---: |
-|![alt text](img/course/feat2.png)|
+|             웹캠 실행             |
+| :-------------------------------: |
+| ![alt text](img/course/feat2.png) |
 
 **[ 나이, 성별 추론 ]**
 
 - 웹캠에 인식되는 사람의 얼굴을 추적하고 나이와 성별을 학습된 모델을 가지고 추론하여 웹캠에 나타냅니다.
 
-| 나이 및 성별 추론 |
-| :---: |
-|![alt text](img/course/feat1.png)|
+|         나이 및 성별 추론         |
+| :-------------------------------: |
+| ![alt text](img/course/feat1.png) |
 
 **[ Ollama 요청 ]**
 - 나이와 성별 데이터를 python 스크립트 내부의 자동완성 prompt를 통해 올라마에 질문합니다.
 
-| Ollama 요청 |
-| :---: |
-|![alt text](img/course/feat3.png)|
+|            Ollama 요청            |
+| :-------------------------------: |
+| ![alt text](img/course/feat3.png) |
 
 - Ollama가 답변을 준비하는 동안 웹캠은 닫힌 상태가 됩니다.
 
-| 웹캠 닫힘 |
-| :---: |
-|![alt text](img/course/feat5.png)|
+|             웹캠 닫힘             |
+| :-------------------------------: |
+| ![alt text](img/course/feat5.png) |
 
 - Ollama가 답변을 준비하는 동안 스페이스바를 추가 입력하게 되면 다음과 같은 문구가 나타납니다.
 
-| 예외 처리 |
-| :---: |
-|![alt text](img/course/feat6.png)|
+|             예외 처리             |
+| :-------------------------------: |
+| ![alt text](img/course/feat6.png) |
 
 **[ Ollama 답변 완료 ]**
 - Ollama가 답변 완료 상태가 되면 웹캠은 재개 되고 CLI에 영양제에 대한 정보를 제공합니다.
 
-| 답변 완료 |
-| :---: |
-|![alt text](img/course/feat4.png)|
+|             답변 완료             |
+| :-------------------------------: |
+| ![alt text](img/course/feat4.png) |
 
 **[ 종료 조건 ]**
 - 웹캠 종료 조건은 다음과 같습니다.
   - 웹캠 창에서 "q" 입력
   - CLI에 "웹캠 종료"
 
-| 웹캠 종료 |
-| :---: |
-|![alt text](img/course/feat7.png)|
+|             웹캠 종료             |
+| :-------------------------------: |
+| ![alt text](img/course/feat7.png) |
 
 - 프로세서 종료 조건은 다음과 같습니다.
   - CLI에 "웹캠 종료" 입력
 
-| 프로세서 종료 |
-| :---: |
-|![alt text](img/course/feat8.png)|
+|           프로세서 종료           |
+| :-------------------------------: |
+| ![alt text](img/course/feat8.png) |
 
-## Ultra96-V2 DPU 구현 과정
-
-### FPGA DPU 구현
+# Ultra96-V2 DPU 구현 과정
 
 <p align="center">
 <img src="https://github.com/Xilinx/PYNQ/raw/master/logo.png" width=70%><br>
 </p>
 
-### What is PYNQ?
+## 1. Using PYNQ
 
 PYNQ: 파이썬으로 Zynq 하드웨어를 쉽게! ✨
 ---
@@ -198,7 +197,57 @@ PYNQ는 Jupyter Notebook 환경을 제공하여 웹 브라우저를 통해 코�
 > 
 PYNQ는 하드웨어 설계에 대한 깊은 지식 없이도 Zynq 디바이스의 강력한 병렬 처리 능력을 활용할 수 있도록 돕습니다. 마치 게임 컨트롤러로 복잡한 기계를 조작하듯이, 아이디어를 빠르게 프로토타이핑하고 실제 제품으로 구현하는 데 걸리는 시간을 획기적으로 단축시켜 줍니다.
 
-### PYNQ
+## 2. Import DPU on PYNQ
+
+```linux
+  pip3 install pynq-dpu --no-build-isolation
+```
+- FPGA에서 DPU를 활성화 시킴
+
+```
+cd $PYNQ_JUPYTER_NOTEBOOKS
+pynq get-notebooks pynq-dpu -p .
+```
+- 주피터 노트북에 DPU 관련 파일들을 fetch함
+
+# DPU에 따른 성능 비교
+
+> 자세한 Code는 Issue를 참고
+- [ResNET50 성능비교](https://github.com/drgn88/ai_age_body_tablet_team4/issues/2)<br>
+- [YoloV3 성능비교](https://github.com/drgn88/ai_age_body_tablet_team4/issues/3)<br>
+
+비교 HW Spec
+---
+| i7-1260P | Ultra7 155H | Raspberrypi-5-A76 | Ultra96V2-A53 |
+| :------: | :---------: | :---------------: | :-----------: |
+|  4.7GHz  |   4.8GHz    |      2.4GHz       |    1.5GHz     |
+
+## ResNET50
+
+|     &nbsp;     | i7-1260P | Ultra7 155H | Raspberrypi-5-A76 | Ultra96V2-A53 | Ultra96V2-DPU |
+| :------------: | :------: | :---------: | :---------------: | :-----------: | :-----------: |
+|      FPS       |   11.1   |    14.22    |       4.23        |     0.54      |     19.63     |
+| 처리 시간(sec) |   9.10   |     7.1     |       23.88       |    186.31     |     5.14      |
+
+## YoloV3 
+
+| &nbsp; | Ultra96V2-PS | Ultra96V2-DPU | Raspberrypi-5 | i7-1260P |
+| :----: | :----------: | :-----------: | :-----------: | :------: |
+|  FPS   |     0.18     |     2.72      |     9.31      |  40.95   |
+
+🌟 DPU Performance: ResNET50 >> YoloV3
+---
+
+| 특징                 | ResNet50 (이미지 분류)                                   | YOLOv3 (객체 탐지)                                                                                    |
+| :------------------- | :------------------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
+| **주요 연산 비중**   | 컨볼루션, 풀링 등 DPU 가속에 최적화된 연산 비중 높음     | 컨볼루션 연산 외에 NMS(Non-Maximum Suppression) 등 CPU 기반 후처리 비중 존재                          |
+| **모델 구조 단순성** | 비교적 정형화된 컨볼루션 네트워크 (잔차 블록)            | Darknet-53 백본 + FPN (Feature Pyramid Network), 다중 스케일 예측 등 복잡성 증가                      |
+| **DPU 활용 효율**    | DPU의 연산 파이프라인에 잘 맞아 높은 가속 효율           | DPU 가속 범위를 벗어나는 후처리 단계에서 병목 발생 가능                                               |
+| **최종 성능 개선**   | 컨볼루션 연산 가속으로 인해 전체 추론 속도 **크게 개선** | 컨볼루션 연산은 가속되나, 후처리 등으로 인해 전체적인 체감 속도 개선 폭이 **상대적으로 작을 수 있음** |
+| **주요 병목 지점**   | 거의 없음 (대부분 DPU에서 효율적 처리)                   | NMS 등 **CPU 기반 후처리** 단계가 주요 병목 지점될 가능성 높음                                        |
+
+
+
 
 ## 🚀Trouble Shooting 
 [⚒️[Trained AI Model 1]](/trouble_shooting/Trouble_Shooting.md)   <br>
