@@ -96,6 +96,71 @@
 
 ## 통합 모델 기능
 
+**[ 실행 ]**
+- controller.py 실행하면 Command Line Interface에 올라마 실행됩니다.
+
+| 실행 |
+| :---: |
+|![alt text](img/course/feat0.png)|
+
+**[ 웹캠 실행 ]**
+- CLI에 웹캠실행 명령을 입력하면 웹캠이 실행 됩니다.
+- 완료되면 다음과 같은 안내 메시지가 나타납니다.
+
+| 웹캠 실행 |
+| :---: |
+|![alt text](img/course/feat2.png)|
+
+**[ 나이, 성별 추론 ]**
+
+- 웹캠에 인식되는 사람의 얼굴을 추적하고 나이와 성별을 학습된 모델을 가지고 추론하여 웹캠에 나타냅니다.
+
+| 나이 및 성별 추론 |
+| :---: |
+|![alt text](img/course/feat1.png)|
+
+**[ Ollama 요청 ]**
+- 나이와 성별 데이터를 python 스크립트 내부의 자동완성 prompt를 통해 올라마에 질문합니다.
+
+| Ollama 요청 |
+| :---: |
+|![alt text](img/course/feat3.png)|
+
+- Ollama가 답변을 준비하는 동안 웹캠은 닫힌 상태가 됩니다.
+
+| 웹캠 닫힘 |
+| :---: |
+|![alt text](img/course/feat5.png)|
+
+- Ollama가 답변을 준비하는 동안 스페이스바를 추가 입력하게 되면 다음과 같은 문구가 나타납니다.
+
+| 예외 처리 |
+| :---: |
+|![alt text](img/course/feat6.png)|
+
+**[ Ollama 답변 완료 ]**
+- Ollama가 답변 완료 상태가 되면 웹캠은 재개 되고 CLI에 영양제에 대한 정보를 제공합니다.
+
+| 답변 완료 |
+| :---: |
+|![alt text](img/course/feat4.png)|
+
+**[ 종료 조건 ]**
+- 웹캠 종료 조건은 다음과 같습니다.
+  - 웹캠 창에서 "q" 입력
+  - CLI에 "웹캠 종료"
+
+| 웹캠 종료 |
+| :---: |
+|![alt text](img/course/feat7.png)|
+
+- 프로세서 종료 조건은 다음과 같습니다.
+  - CLI에 "웹캠 종료" 입력
+
+| 프로세서 종료 |
+| :---: |
+|![alt text](img/course/feat8.png)|
+
 ## Ultra96-V2 DPU 구현 과정
 
 ### FPGA DPU 구현
