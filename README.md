@@ -85,7 +85,10 @@
 
 **[ 실행 ]**
 - controller.py 실행하면 Command Line Interface에 올라마 실행됩니다.
-![alt text](img/course/feat0.png)
+
+| 실행 |
+| :---: |
+|![alt text](img/course/feat0.png)|
 
 **[ 웹캠 실행 ]**
 - CLI에 웹캠실행 명령을 입력하면 웹캠이 실행 됩니다.
@@ -120,7 +123,7 @@
 
 - 시스템 종료 조건은 다음과 같습니다.
   - CLI에 "웹캠 종료" 입력
-  
+
 ![alt text](img/course/feat8.png)
 
 ## Ultra96-V2 DPU 구현 과정
