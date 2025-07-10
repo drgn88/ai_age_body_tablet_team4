@@ -102,10 +102,3 @@
 [⚒️[Accelerator 2]](Trouble_Shooting5.md)       <br>
 [⚒️[추가할거있으면~]](Trouble_Shooting6.md)      <br>
 
-### 이은성
-
-### 장환
-
-### 정은지
-
-### 최현우
