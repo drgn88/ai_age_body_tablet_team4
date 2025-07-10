@@ -9,18 +9,25 @@
 |                                                                                                                **정은지**                                                                                                                |                                                                                                                **장환**                                                                                                                 |                                                         **이은성**                                                          |                                                                    **최현우**                                                                     |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                                                               Team Leader                                                                                                                |                                                                                                               Validation                                                                                                                |                                                    Application Developer                                                    |                                                                On-Device Developer                                                                |
-| [<img src="https://i.namu.wiki/i/Y650moMUwUSmEltUeTIHISqe6E55ZAlTGHyBIO2lbSUO4HxxF7EB5dBTH-gFipuSgVUqJMriWR9TykMRndEE8cbSPqQ0akgqX4MyaBtoJhJ9I6yh1hvgi8qF-fTb1vHBMbXA2rfl93GD9RrqHFiPig.webp" width=150 height=150> </br> @Eunji Jung](https://github.com/2735C) | [<img src="https://i.namu.wiki/i/rmibVEm7XPBY65d0Ok8BEREoiQZWXvTKYpAoaQIrhDaqq28veHH8Q7izbBrl9ZYYBqghbP691rAOChdU5gCP34iyt91bkMH6RPf_mIcyj155nsDlLs8wQH1ubXstRXPj3nBk8yZIeomIJBFBUMD5lQ.webp" width=150 height=150> </br> @Jang Hwan](https://github.com/sundaah) | [<img src="https://i1.sndcdn.com/artworks-Z5SLEGyINrvdjrkz-CQbgFA-t500x500.jpg" width=150 height=150> </br> @EunSeong Lee](https://eunseongl.github.io/) | [<img src="https://img4.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202307/22/NEWS1/20230722073015233wtqs.jpg" width=150 height=150> </br> @HyenWoo Choi](https://github.com/drgn88) |
+| [<img src="/home/linux/Pictures/Screenshots/Screenshot from 2025-07-10 09-20-36.png" width=150 height=150> </br> @Eunji Jung](https://github.com/2735C) | [<img src="https://i.namu.wiki/i/rmibVEm7XPBY65d0Ok8BEREoiQZWXvTKYpAoaQIrhDaqq28veHH8Q7izbBrl9ZYYBqghbP691rAOChdU5gCP34iyt91bkMH6RPf_mIcyj155nsDlLs8wQH1ubXstRXPj3nBk8yZIeomIJBFBUMD5lQ.webp" width=150 height=150> </br> @Jang Hwan](https://github.com/sundaah) | [<img src="https://i1.sndcdn.com/artworks-Z5SLEGyINrvdjrkz-CQbgFA-t500x500.jpg" width=150 height=150> </br> @EunSeong Lee](https://eunseongl.github.io/) | [<img src="https://img4.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202307/22/NEWS1/20230722073015233wtqs.jpg" width=150 height=150> </br> @HyenWoo Choi](https://github.com/drgn88) |
 
 ## 🖊️Role
 
 ### 🦖정은지
 - Team leader
+- UTKFace DataSet 확보
+- 나이 및 성별 추론 모델 학습
+  - 라즈베리파이 임베딩 및 성능 개선
+  - Image 추론 모델 후처리 보정
+- Ubuntu Vs Raspberry Pi 성능 비교
 
 ### 이은성
+- 나이 및 성별 데이터셋 구축 및 모델 학습
 - S/W 개발
-- AI 모델 통합 (+알고리즘 개선)
+- AI 모델 통합 (+ 알고리즘 개선)
 - 라즈베리파이 임베딩
   - Application developer(Raspberry pi)
+  - Raspberry PI 성능 검증
 
 ### 🥊장환
 - Validation
