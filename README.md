@@ -94,12 +94,12 @@
 
 
 ## 🚀Trouble Shooting 
-[[Trained AI Model 1]](Trouble_Shooting.md)<br>
-[[Trained AI Model 2]](Trouble_Shooting1.md)<br>
-[[Integrated System 1]](Trouble_Shooting2.md)<br>
-[[Integrated System 2]](Trouble_Shooting3.md)<br>
-[[Accelerator 1]](Trouble_Shooting4.md)<br>
-[[Accelerator 2]](Trouble_Shooting5.md)<br>
+[⚒️[Trained AI Model 1]](Trouble_Shooting.md)<br>
+[⚒️[Trained AI Model 2]](Trouble_Shooting1.md)<br>
+[⚒️[Integrated System 1]](Trouble_Shooting2.md)<br>
+[⚒️[Integrated System 2]](Trouble_Shooting3.md)<br>
+[⚒️[Accelerator 1]](Trouble_Shooting4.md)<br>
+[⚒️[Accelerator 2]](Trouble_Shooting5.md)<br>
 
 ### 이은성
 
