@@ -78,7 +78,7 @@
   -  데이터셋 보강: 중장년층 데이터가 더 많이 포함된 데이터셋을 확보하여 모델 성능 향상 시도.
   - 데이터 노후화 문제: 확보한 데이터셋이 오래되어 현재 중장년층 얼굴 특징과 불일치하는 문제 발생.
   - 후처리 적용: 나이 추론 결과에 대한 후처리(Post-processing)를 적용하여 정확도 개선.
-  - https://github.com/drgn88/ai_age_body_tablet_team4/issues/1
+  - [참고 자료](https://github.com/drgn88/ai_age_body_tablet_team4/issues/1)
 
 [07/06]
 **사진 기반 나이 추론 모델 성능 분석**
@@ -150,7 +150,7 @@ Ultra96 V2: Vitis-AI를 활용한 xmodel 생성 시도
   - Vitis AI에서 Ultra96-V2에 제공하는 모델 라이브러리인 VGG16 모델로 새로운 Gender 학습 모델을 생성하여 Ubuntu에서의 성능을 확인함 
     - Ultra96-V2에서 VGG16 모델이 작동하지 않는(리소스 부족) 이슈 발생
     - 새로운 데이터셋으로 학습시킨 Gender model의 성능을 비교했다는 의의(ResNet152:85% 정확도, VGG16: 74%) 
-       - https://github.com/drgn88/ai_age_body_tablet_team4/issues/4
+       - [참고 자료](https://github.com/drgn88/ai_age_body_tablet_team4/issues/4)
     - 같은 데이터셋으로 나이 모델도 확인했지만 정확도가 높지는 않았음
 
 
@@ -198,7 +198,7 @@ Ultra96 V2: Vitis-AI를 활용한 xmodel 생성 시도
 - 후처리 보정했음에도 부족한 점
   - (1) 동서양 데이터량의 차이 <br> 서양인에게 더 적합한 모델 -> 후처리 보정 시, 기준 나이보다 서양인은 높게, 동양인은 낮게 출력됨.
   - (2) 데이터의 노후화(2016년 UTKFace 자료로 학습) <br> 같은 나이의 여성 대비 남성의 나이가 더 높게 예측 됨 -> 데이터 품질 향상 필요
-  - 발표자료 참고: https://github.com/drgn88/ai_age_body_tablet_team4/tree/main/presentation
+  - 발표자료 참고: [link](https://github.com/drgn88/ai_age_body_tablet_team4/tree/main/presentation)
 
 #### 🙋‍♂️이은성
 
