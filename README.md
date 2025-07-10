@@ -77,24 +77,25 @@
 | FPGA-PS 추론 모델 제작 |       |       |       |       |       |       |       |   O   |   O   |   O   |
 | 발표 자료 제작         |       |       |       |       |       |       |       |       |   O   |   O   |
 
-## SW Architecture
-```
-|--- System/
-| |--- Controller.py
-| |--- Cam.py
-|
-|--- Model/
-| |--- Img_DataSet
-| |--- Age_vgg16.keras
-| |--- Gen_ResNet151.keras
-
-```
 
 ## 학습과정
 > 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](https://github.com/drgn88/ai_age_body_tablet_team4/blob/main/presentation/TEAM4.pdf)
 
 
 ## 통합 모델 기능
+
+### SW Architecture
+```
+|--- System/
+|   |--- Controller.py
+|   └── Cam.py
+|
+|--- Model/
+|   |--- Img_DataSet/
+|   |--- Age_vgg16.keras
+|   └── Gen_ResNet151.keras
+```
+
 
 **[ 실행 ]**
 - controller.py 실행하면 Command Line Interface에 올라마 실행됩니다.
