@@ -100,6 +100,7 @@
 [⚒️[Integrated System 2]](Trouble_Shooting3.md) <br>
 [⚒️[Accelerator 1]](Trouble_Shooting4.md)       <br>
 [⚒️[Accelerator 2]](Trouble_Shooting5.md)       <br>
+[⚒️[추가할거있으면~]](Trouble_Shooting6.md)      <br>
 
 ### 이은성
 
