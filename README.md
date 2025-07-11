@@ -126,11 +126,20 @@
 <img src="/img/thumbnail/Model_prediction1.png" width=1000 > |
 --|
 
-<img src="/img/thumbnail/Model_prediction2.png" width=1000 > |
+* 나이의 경우, VGG16이 Loss가 더 적은 Model보다 심각한 오차가  발생하지 않는 것을 확인
+* 성별은 WebCam에서는 ResNet152V2의 성능이 높은 것을 확인했지만 그 출력이 안정적이지 않았고, <br> Test Image에서 두 번째로 정확도가 높은  모델보다 틀린 케이스가 많은 것을 확인할 수 있음
+
+<img src="/img/thumbnail/Model_prediction2.png" width=500 > |
 --|
+
+* 성별 모델의 학습 데이터 개수를 2,000 -> 10,000개로 증가시켜 모델의 성능을 향상시킴.
+
 
 <img src="/img/thumbnail/Model_prediction3.png" width=1000 > |
 --|
+
+* Ubuntu 환경에서의 FPS와 정확도를 비교한 결과이며, <br>
+ResNet152V2가 VGG16 모델보다 깊은 구조인 만큼 초당 프레임 수가 적은 것을 확인 가능
 
 ## (2) 통합 모델 기능
 
