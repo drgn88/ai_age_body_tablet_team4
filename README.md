@@ -93,7 +93,7 @@
 ### Backbone Model
 > 나이 / 성별
 
-[<img src="/img/thumbnail/backbone.png" width=150 height=150>] |
+<img src="/img/thumbnail/backbone.png" width=1000 > |
 --|
 
 > 출력층
