@@ -77,10 +77,10 @@
 | FPGA-PS 추론 모델 제작 |       |       |       |       |       |       |       |   O   |   O   |   O   |
 | 발표 자료 제작         |       |       |       |       |       |       |       |       |   O   |   O   |
 
-
-## 학습과정
+## 개발 과정
 > 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](https://github.com/drgn88/ai_age_body_tablet_team4/blob/main/presentation/TEAM4.pdf)
 
+## 학습과정
 ### DataSet: UTKFace
 
 ||나이| 성별|
@@ -102,6 +102,17 @@
 --|--|--|--|--
 |나이|회귀|실수|Dense(1)|MAE|MSE|
 |성별|이진 분류|확률(0 or 1)|Dense(1, activation = ‘sigmoid’)|binary_crossentrop|
+
+> Age Loss plot
+
+<img src="/img/thumbnail/age_loss_plot.png" width=1000 > |
+--|
+
+> Gender Accuracy plot
+
+<img src="/img/thumbnail/gender_accuracy_plot.png" width=1000 > |
+--|
+
 
 ## 통합 모델 기능
 
