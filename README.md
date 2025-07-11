@@ -80,7 +80,7 @@
 ## 개발 과정
 > 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](https://github.com/drgn88/ai_age_body_tablet_team4/blob/main/presentation/TEAM4.pdf)
 
-## 학습과정
+## (1) 학습과정
 ### DataSet: UTKFace
 
 ||나이| 성별|
@@ -96,6 +96,9 @@
 <img src="/img/thumbnail/Backbone.png" width=1000 > |
 --|
 
+* 나이는 성별보다 단순한 구조 선택 -> 연속된 실수 출력을 위해 일반화 성능 UP / 과적합 방지
+* 성별은 레이어 수가 많은 깊은 구조 선택 -> 눈썹 얼굴형 광대 등을 구분해야 하므로 고성능 특징 추출기가 필요
+
 > 출력층
 
 |분류|문제 유형 |예측값 |출력층|Loss Func.|
@@ -108,13 +111,28 @@
 <img src="/img/thumbnail/age_loss_plot.png" width=1000 > |
 --|
 
+
+* Loss가 가장 적은 모델은 ResNet50V2/152V2지만 WebCam 추론 시 VGG16의 성능이 가장 good 
+* 나이 출력 시 과적합을 방지와 높은 일반화 성능이  중요한 것을 확인
+
 > Gender Accuracy plot
 
 <img src="/img/thumbnail/gender_accuracy_plot.png" width=1000 > |
 --|
 
 
-## 통합 모델 기능
+> Model Prediction
+
+<img src="/img/thumbnail/Model_prediction1.png" width=1000 > |
+--|
+
+<img src="/img/thumbnail/Model_prediction2.png" width=1000 > |
+--|
+
+<img src="/img/thumbnail/Model_prediction3.png" width=1000 > |
+--|
+
+## (2) 통합 모델 기능
 
 ### SW Architecture
 ```
@@ -196,7 +214,7 @@
 | ![alt text](img/course/feat8.png) |
 
 
-## Ultra96-V2 DPU 구현 과정
+## (3) Ultra96-V2 DPU 구현 과정
 
 ### FPGA DPU 구현
 
