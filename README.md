@@ -90,12 +90,18 @@
 |Validation Size|417|1,028|
 |Testing Size|210|1,029|
 
+### Backbone Model
+> 나이 / 성별
+
+[<img src="/img/thumbnail/backbone.png" width=150 height=150>] |
+--|
+
+> 출력층
+
 |분류|문제 유형 |예측값 |출력층|Loss Func.|
 --|--|--|--|--
 |나이|회귀|실수|Dense(1)|MAE|MSE|
 |성별|이진 분류|확률(0 or 1)|Dense(1, activation = ‘sigmoid’)|binary_crossentrop|
-
-### Backbone Model
 
 ## 통합 모델 기능
 
