@@ -138,7 +138,7 @@
 <img src="/img/thumbnail/Model_prediction3.png" width=1000 > |
 --|
 
-* Ubuntu 환경에서의 FPS와 정확도를 비교한 결과이며, <br>
+* Ubuntu 환경에서의 FPS와 학습하지 않은 UTKFace 데이터로 정확도를 비교한 결과이며, <br>
 ResNet152V2가 VGG16 모델보다 깊은 구조인 만큼 초당 프레임 수가 적은 것을 확인 가능
 
 ## (2) 통합 모델 기능
