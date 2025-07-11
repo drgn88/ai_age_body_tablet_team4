@@ -81,6 +81,13 @@
 ## 학습과정
 > 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](https://github.com/drgn88/ai_age_body_tablet_team4/blob/main/presentation/TEAM4.pdf)
 
+### DataSet
+||나이| 성별|
+--|--|--
+| 데이터 개수|2,087|10,284|
+|Training Size|1,460|8,227|
+|Validation Size|417|1,028|
+|Testing Size|210|1,029|
 
 ## 통합 모델 기능
 
