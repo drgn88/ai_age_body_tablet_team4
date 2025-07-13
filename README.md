@@ -77,12 +77,72 @@
 | FPGA-PS 추론 모델 제작 |       |       |       |       |       |       |       |   O   |   O   |   O   |
 | 발표 자료 제작         |       |       |       |       |       |       |       |       |   O   |   O   |
 
+## 개발 과정
+> 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](https://github.com/drgn88/ai_age_body_tablet_team4/blob/main/presentation/Team4.pdf)
 
-## 학습과정
-> 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](https://github.com/drgn88/ai_age_body_tablet_team4/blob/main/presentation/TEAM4.pdf)
+## (1) 학습과정 
+> [[상세 과정]](https://github.com/drgn88/ai_age_body_tablet_team4/issues/1)
+### DataSet: UTKFace
+
+||나이| 성별|
+--|--|--
+| 데이터 개수|2,087|10,284|
+|Training Size|1,460|8,227|
+|Validation Size|417|1,028|
+|Testing Size|210|1,029|
+
+### Backbone Model
+> 나이 / 성별
+
+<img src="/img/thumbnail/Backbone.png" width=1000 > |
+--|
+
+* 나이는 성별보다 단순한 구조 선택 -> 연속된 실수 출력을 위해 일반화 성능 UP / 과적합 방지
+* 성별은 레이어 수가 많은 깊은 구조 선택 -> 눈썹 얼굴형 광대 등을 구분해야 하므로 고성능 특징 추출기가 필요
+
+> 출력층
+
+|분류|문제 유형 |예측값 |출력층|Loss Func.|
+--|--|--|--|--
+|나이|회귀|실수|Dense(1)|MAE|MSE|
+|성별|이진 분류|확률(0 or 1)|Dense(1, activation = ‘sigmoid’)|binary_crossentrop|
+
+> Age Loss plot
+
+<img src="/img/thumbnail/age_loss_plot.png" width=1000 > |
+--|
 
 
-## 통합 모델 기능
+* Loss가 가장 적은 모델은 ResNet50V2/152V2지만 WebCam 추론 시 VGG16의 성능이 가장 good 
+* 나이 출력 시 과적합을 방지와 높은 일반화 성능이  중요한 것을 확인
+
+> Gender Accuracy plot
+
+<img src="/img/thumbnail/gender_accuracy_plot.png" width=1000 > |
+--|
+
+
+> Model Prediction
+
+<img src="/img/thumbnail/Model_prediction1.png" width=1000 > |
+--|
+
+* 나이의 경우, VGG16이 Loss가 더 적은 Model보다 심각한 오차가  발생하지 않는 것을 확인
+* 성별은 WebCam에서는 ResNet152V2의 성능이 높은 것을 확인했지만 그 출력이 안정적이지 않았고, <br> Test Image에서 두 번째로 정확도가 높은  모델보다 틀린 케이스가 많은 것을 확인할 수 있음
+
+<img src="/img/thumbnail/Model_prediction2.png" width=500 > |
+--|
+
+* 성별 모델의 학습 데이터 개수를 2,000 -> 10,000개로 증가시켜 모델의 성능을 향상시킴.
+
+
+<img src="/img/thumbnail/Model_prediction3.png" width=1000 > |
+--|
+
+* Ubuntu 환경에서의 FPS와 학습하지 않은 UTKFace 데이터로 정확도를 비교한 결과이며, <br>
+ResNet152V2가 VGG16 모델보다 깊은 구조인 만큼 초당 프레임 수가 적은 것을 확인 가능
+
+## (2) 통합 모델 기능
 
 ### SW Architecture
 ```
@@ -113,7 +173,7 @@
 | :-------------------------------: |
 | ![alt text](img/course/feat2.png) |
 
-**[ 나이, 성별 추론 ]**
+**[ 나이 및 성별 추론 ]**
 
 - 웹캠에 인식되는 사람의 얼굴을 추적하고 나이와 성별을 학습된 모델을 가지고 추론하여 웹캠에 나타냅니다.
 
@@ -164,7 +224,7 @@
 | ![alt text](img/course/feat8.png) |
 
 
-## Ultra96-V2 DPU 구현 과정
+## (3) Ultra96-V2 DPU 구현 과정
 
 ### FPGA DPU 구현
 
